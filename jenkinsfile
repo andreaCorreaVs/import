@@ -12,3 +12,7 @@ spec:
           stage 'deploy'
           openshiftDeploy(deploymentConfig: 'cotd')
         }
+  triggers:
+  - github:
+      secret: r3dh4t1!
+    type: github
